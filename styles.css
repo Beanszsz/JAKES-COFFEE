@@ -1,0 +1,307 @@
+﻿.wrapper {
+  margin: auto;
+  border: 1px solid #ad9a8c;
+  width: 1300px;
+  margin-top: 5rem;
+  overflow: hidden;
+  border-radius: 0px;
+  box-shadow: 5px 5px 87px #70705a, -5px -5px 87px #ffffff;
+  background-color: #ccaa66;
+  margin-bottom: 100vh;
+  padding: 20px;
+}
+
+.spacer {
+  height: 3rem;
+}
+
+header {
+  /* width: 960px; */
+  font-family: "Roboto Mono", sans-serif;
+}
+
+nav,
+section {
+  float: left;
+  margin: 0.4rem;
+}
+
+nav {
+  width: 320px;
+  height: 500px;
+  border-radius: 30px;
+  background: #e8d882;
+  box-shadow: inset 12px 12px 24px #a99e5f, inset -12px -12px 24px #ffffa5;
+  margin: 0.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  margin: 2.5rem 0;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #330000;
+  font-weight: bold;
+}
+
+nav a span:hover {
+  color: #ccaa66;
+  /* Replace with your desired hover effect */
+}
+
+.button_nav nav {
+  text-align: center;
+  display: inline-block;
+}
+
+section {
+  width: 950px;
+  height: 500px;
+  background-color: #f1e8b0;
+  border-radius: 30px;
+  background: #ffffcc;
+  box-shadow: inset 5px 5px 69px #b8b893, inset -5px -5px 69px #ffffff;
+  margin: 0.4rem;
+  margin-left: 0.2rem;
+}
+
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 20px;
+  color: #330000;
+  background-color: #ffffcc;
+  margin: 0;
+  overflow: hidden;
+}
+
+header {
+  padding: 20px 0;
+}
+
+.jake-header {
+  background-color: #ccaa66;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.page1 a[href="#home"] {
+  color: #ccaa66;
+}
+
+.page2 a[href="#menu"] {
+  color: #ccaa66;
+}
+
+.button_nav {
+  text-align: center;
+  display: inline-block;
+  border-radius: 0%;
+}
+
+.page3 a[href="#music"] {
+  color: #ccaa66;
+}
+
+.page4 a[href="#jobs"] {
+  color: #ccaa66;
+}
+
+.wrapper:target::before {
+  content: "";
+  display: block;
+  /* height: 5rem;  */
+  /* margin: -5rem 0 0;  */
+}
+
+@media (max-width: 1500px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .spacer {
+    height: 2rem;
+  }
+
+  .jake-header {
+    width: auto;
+    font-size: 2.5rem;
+  }
+
+  nav {
+    padding: 5px;
+    width: 250px;
+    height: auto;
+    font-size: 1rem;
+  }
+
+  section {
+    width: 1050px;
+    height: 500px;
+  }
+
+  section ul {
+    font-size: 1.2rem;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .spacer {
+    height: 0rem;
+  }
+
+  .jake-header {
+    width: auto;
+    font-size: 2.5rem;
+  }
+
+  nav {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+  }
+
+  nav a {
+    padding: 8vw;
+    align-items: center;
+  }
+
+  section {
+    width: 1130px;
+    height: 900px;
+  }
+
+  section ul {
+    font-size: 1.3rem;
+    padding: 50px;
+  }
+
+  .button_nav nav {
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    position: relative;
+    bottom: -40px;
+    width: auto;
+    padding: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .spacer {
+    height: 0rem;
+  }
+
+  .jake-header {
+    width: auto;
+    font-size: 2.5rem;
+  }
+
+  nav {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 50px;
+    margin-right: 0%;
+  }
+
+  nav a {
+    padding: 6.6vw;
+  }
+
+  section {
+    width: 780px;
+    height: 800px;
+    font-size: 1rem;
+  }
+
+  section ul {
+    font-size: 0.8rem;
+    padding: 50px;
+  }
+
+  .button_nav nav {
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    position: relative;
+    bottom: -190px;
+    width: auto;
+    padding: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    padding: 0%;
+  }
+
+  .spacer {
+    height: 0rem;
+  }
+
+  .jake-header {
+    width: auto;
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    width: 569px;
+    height: 40px;
+    border-radius: 0px;
+    font-size: 1rem;
+    align-items: center;
+    align-content: center;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+    margin-right: 6vw;
+    padding: 4.5vw;
+  }
+
+  section {
+    width: 590px;
+    height: 872px;
+    font-size: 1.5rem;
+    border-radius: 0%;
+  }
+
+  section ul {
+    font-size: 0.8rem;
+  }
+
+  .button_nav nav {
+    text-align: center;
+    display: inline-block;
+    border-radius: px;
+    position: relative;
+    bottom: -190px;
+    width: auto;
+    padding: auto;
+  }
+}
